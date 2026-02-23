@@ -48,7 +48,7 @@ const NavScrollExample = ({ setSearch }) => {
         bg="dark"
         variant="dark"
         fixed="top"
-        style={{ zIndex: "1000", height: "10vh" }}
+        style={{ zIndex: "1000" }}   // ✅ removed fixed height
       >
         <Container fluid>
           <Navbar.Brand
@@ -66,7 +66,11 @@ const NavScrollExample = ({ setSearch }) => {
 
           <Navbar.Toggle aria-controls="navbarScroll" />
 
-          <Navbar.Collapse id="navbarScroll">
+          {/* ✅ MOBILE DRAWER STYLE COLLAPSE */}
+          <Navbar.Collapse
+            id="navbarScroll"
+            className="mobile-menu"
+          >
             <Nav className="me-auto my-2 my-lg-0" navbarScroll>
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
@@ -99,7 +103,6 @@ const NavScrollExample = ({ setSearch }) => {
                 }}
               />
 
-              {/* ✅ SHOW ON FOCUS EVEN IF EMPTY */}
               {showSuggestions && (
                 <div
                   style={{
@@ -148,7 +151,54 @@ const NavScrollExample = ({ setSearch }) => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      {/* ✅ MOBILE DRAWER CSS */}
+      <style>
+        {`
+          @media (max-width: 991px) {
+            .mobile-menu {
+              background: #111827;
+              padding: 20px;
+              margin-top: 10px;
+              border-radius: 12px;
+              box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+              animation: slideDown 0.3s ease-in-out;
+            }
+
+            .mobile-menu .nav-link {
+              padding: 10px 0;
+              font-size: 1.05rem;
+            }
+
+            .mobile-menu .btn {
+              margin-top: 10px;
+              width: 100%;
+            }
+
+            .mobile-menu form {
+              margin: 15px 0;
+              width: 100%;
+            }
+
+            .mobile-menu input {
+              width: 100% !important;
+            }
+          }
+
+          @keyframes slideDown {
+            from {
+              opacity: 0;
+              transform: translateY(-10px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}
+      </style>
     </>
   );
 };
+
 export default NavScrollExample;
