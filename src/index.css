@@ -1,0 +1,6 @@
+.quant_counter{
+    width: 5.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
