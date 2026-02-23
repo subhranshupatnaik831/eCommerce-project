@@ -22,16 +22,19 @@ const Profile = () => {
 
   return (
     <div
-      className="min-vh-100 d-flex align-items-center justify-content-center"
+      className="min-vh-100 d-flex align-items-center justify-content-center px-3"
       style={{
         background: "radial-gradient(circle at top, #1e3a8a, #020617)",
       }}
     >
-      <Container className="d-flex justify-content-center" style={{marginBottom:"75px"}}>
+      <Container
+        className="d-flex justify-content-center"
+        style={{ marginBottom: "75px" }}
+      >
         <Card
-          className="border-0 shadow-lg text-center"
+          className="border-0 shadow-lg text-center w-100"
           style={{
-            width: "26rem",
+            maxWidth: "26rem",
             borderRadius: "18px",
             padding: "20px",
             background: "#ffffff",
@@ -73,6 +76,7 @@ const Profile = () => {
                 padding: "15px",
                 marginBottom: "20px",
                 textAlign: "left",
+                wordBreak: "break-word",
               }}
             >
               <p className="mb-2">
@@ -83,6 +87,16 @@ const Profile = () => {
               </p>
             </div>
 
+            {/* Continue to Shop Button (FIXED) */}
+            <Button
+              variant="primary"
+              className="w-100 fw-semibold mb-2"
+              onClick={() => navigate("/home")}
+            >
+              Continue to Shop
+            </Button>
+
+            {/* Logout Button */}
             <Button
               className="w-100 fw-bold"
               style={{
@@ -107,4 +121,5 @@ const Profile = () => {
     </div>
   );
 };
+
 export default Profile;

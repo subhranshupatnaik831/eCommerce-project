@@ -18,12 +18,12 @@ const ContactUs = () => {
         minHeight: "100vh",
         background:
           "radial-gradient(circle at top left, #1e40af, #020617)",
-        padding: "90px 0",
+        padding: "90px 15px",
       }}
     >
       <Container>
         <Card
-          className="border-0"
+          className="border-0 flex-column flex-md-row"
           style={{
             maxWidth: 900,
             margin: "0 auto",
@@ -32,12 +32,11 @@ const ContactUs = () => {
             backdropFilter: "blur(18px)",
             background: "rgba(255,255,255,0.08)",
             boxShadow: "0 30px 60px rgba(0,0,0,0.35)",
-            display: "flex",
-            flexDirection: "row",
           }}
         >
           {/* LEFT */}
           <div
+            className="text-center text-md-start"
             style={{
               flex: 1,
               padding: "36px",
@@ -81,8 +80,13 @@ const ContactUs = () => {
               padding: "36px",
             }}
           >
-            <h4 className="fw-bold mb-1">Send us a message</h4>
-            <p className="text-muted mb-4" style={{ fontSize: 14 }}>
+            <h4 className="fw-bold mb-1 text-center text-md-start">
+              Send us a message
+            </h4>
+            <p
+              className="text-muted mb-4 text-center text-md-start"
+              style={{ fontSize: 14 }}
+            >
               Fill the form and we’ll get back to you
             </p>
 
@@ -158,9 +162,12 @@ const ContactUs = () => {
                   color: "#1e40af",
                 }}
               >
-                <h5 className="fw-bold mb-2">Message sent successfully 🎉</h5>
+                <h5 className="fw-bold mb-2">
+                  Message sent successfully 🎉
+                </h5>
                 <p className="mb-0" style={{ fontSize: 14 }}>
-                  Thanks for reaching out!  
+                  Thanks for reaching out!
+                  <br />
                   Our team has received your message and will get back to you shortly.
                 </p>
               </div>

@@ -18,7 +18,7 @@ const Banner = () => {
           />
           <img
             className="d-block w-100"
-            src="https://m.media-amazon.com/images/G/31/img23/Wireless/shagun/Galaxy/UnPacked/512/1242x300_1.gif"
+            src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/TDOW/AprRevamp/Top-deals_1_01.jpg"
             alt="First slide"
           />
         </Carousel.Item>

@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 
 const Auth = () => {
   const [mode, setMode] = useState("login");
-  const [showPassword, setShowPassword] = useState(false); // NEW
+  const [showPassword, setShowPassword] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -33,7 +33,7 @@ const Auth = () => {
 
   return (
     <div
-      className="min-vh-100 d-flex align-items-center justify-content-center"
+      className="min-vh-100 d-flex align-items-center justify-content-center px-3"
       style={{
         background: "radial-gradient(circle at top, #1e3a8a, #020617)",
       }}
@@ -43,15 +43,12 @@ const Auth = () => {
         style={{ marginBottom: "75px" }}
       >
         <Card
-          className="border-0 shadow-lg overflow-hidden"
+          className="border-0 shadow-lg overflow-hidden flex-column flex-md-row w-100"
           style={{
-            width: "100%",
             maxWidth: "760px",
             borderRadius: "18px",
             minHeight: "420px",
-            display: "flex",
-            flexDirection: "row",
-            transition: "transform 0.3s ease", // NEW
+            transition: "transform 0.3s ease",
           }}
           onMouseEnter={(e) =>
             (e.currentTarget.style.transform = "translateY(-4px)")
@@ -62,6 +59,7 @@ const Auth = () => {
         >
           {/* LEFT */}
           <div
+            className="text-center text-md-start"
             style={{
               flex: 1,
               background: "linear-gradient(160deg,#0f172a,#1e3a8a)",
@@ -103,11 +101,16 @@ const Auth = () => {
               justifyContent: "center",
             }}
           >
-            <h4 className="fw-bold mb-1">
-              {mode === "login" ? "Welcome Back 👋" : "Create Account ✨"}
+            <h4 className="fw-bold mb-1 text-center text-md-start">
+              {mode === "login"
+                ? "Welcome Back 👋"
+                : "Create Account ✨"}
             </h4>
 
-            <p className="text-muted mb-4" style={{ fontSize: "14px" }}>
+            <p
+              className="text-muted mb-4 text-center text-md-start"
+              style={{ fontSize: "14px" }}
+            >
               {mode === "login"
                 ? "Login to continue shopping"
                 : "Join us — it only takes a minute"}
