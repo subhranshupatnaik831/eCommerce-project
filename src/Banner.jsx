@@ -18,7 +18,7 @@ const Banner = () => {
           />
           <img
             className="d-block w-100"
-            src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/TDOW/AprRevamp/Top-deals_1_01.jpg"
+            src="https://m.media-amazon.com/images/G/31/img23/Wireless/shagun/Galaxy/UnPacked/512/1242x300_1.gif"
             alt="First slide"
           />
         </Carousel.Item>
@@ -26,9 +26,8 @@ const Banner = () => {
         <Carousel.Item interval={3000}>
           <img
             className="d-block w-100"
-            src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/AmazonStores/Revamp/Amazon-Stores_01._CB804355852_.jpg"
+            src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/CLP/2026/Jan/28thJan/OnePlus_15R_22._CB772493982_.jpg"
             alt="Second slide"
-            style={{ height: "100vh" }}
           />
         </Carousel.Item>
 
