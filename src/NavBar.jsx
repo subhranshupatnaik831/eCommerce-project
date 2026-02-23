@@ -41,7 +41,7 @@ const NavScrollExample = ({ setSearch }) => {
 
   return (
     <>
-      <div style={{ height: "73px" }}></div>
+      <div style={{ height: "64px" }}></div>
 
       <Navbar
         expand="lg"
