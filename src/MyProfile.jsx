@@ -10,14 +10,14 @@ const Profile = () => {
   const navigate = useNavigate();
   const [address, setAddress] = useState("Detecting location...");
 
-  // ✅ redirect safely AFTER render
+  // redirect safely AFTER render
   useEffect(() => {
     if (!user) {
       navigate("/login");
     }
   }, [user, navigate]);
 
-  // ⛔ prevent UI flicker
+  // prevent UI flicker
   if (!user) return null;
 
   return (
