@@ -9,6 +9,11 @@ const Banner = () => {
           alt=""
           style={{ width: "100%" }}
         />
+        <img
+          src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/TDOW/AprRevamp/Top-deals_1_01.jpg"
+          alt=""
+          style={{ width: "100%" }}
+        />
       <Carousel
         interval={2000}
         pause={false}
