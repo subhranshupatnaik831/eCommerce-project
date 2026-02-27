@@ -4,22 +4,22 @@ import Cards from "./Cards";
 const Banner = () => {
   return (
     <>
+        <img
+          src="https://m.media-amazon.com/images/G/31/img23/Wireless/nbshagun/16thJuly/Banner_1.gif"
+          alt=""
+          style={{ width: "100%" }}
+        />
       <Carousel
         interval={2000}
         pause={false}
         slide
         touch
       >
-        <Carousel.Item interval={5000}>
+        <Carousel.Item interval={3000}>
           <img
-            src="https://m.media-amazon.com/images/G/31/img23/Wireless/nbshagun/16thJuly/Banner_1.gif"
+            src="https://m.media-amazon.com/images/G/31/img23/Wireless/shagun/Galaxy/S26U/S26_Ultra_1242x628._CB785530215_.jpg"
             alt=""
             style={{ width: "100%" }}
-          />
-          <img
-            className="d-block w-100"
-            src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/TDOW/AprRevamp/Top-deals_1_01.jpg"
-            alt="First slide"
           />
         </Carousel.Item>
 
