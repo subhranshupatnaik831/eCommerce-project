@@ -29,7 +29,7 @@ const phones = [
     model: "12",
     price: 64999,
     image:
-      "https://tse3.mm.bing.net/th/id/OIP.CJ4fIZRXw2sSf23wtRbv2wAAAA?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://cdn.beebom.com/mobile/2024/01/OnePlus-12R-2.png",
     rating: 4.6,
     category: "Flagship",
     description:
@@ -88,7 +88,7 @@ const phones = [
     brand: "iQOO",
     model: "Neo 7",
     price: 34999,
-    image: "https://th.bing.com/th/id/OIF.K5uuDC5Dvk09SGghZSg2qg?w=127&h=172&c=7&r=0&o=7&cb=defcache2&dpr=1.3&pid=1.7&rm=3&defcache=1",
+    image: "https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1688368091552/0b466ccd0ac3f7ca581c10ebda0f5ce0.png",
     rating: 4.4,
     category: "Midrange",
     description:
